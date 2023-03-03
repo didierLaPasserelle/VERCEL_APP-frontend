@@ -1,7 +1,6 @@
-fetch('https://vercel-app-backend.vercel.app/')
+fetch('https://vercel-app-backend.vercel.app/year')
  .then(response => response.json())
  .then(data => {
-    console.log(data)
     const yearElement = document.querySelector("#year")
     yearElement.textContent = data.year
  });
